@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Table Booking Form</title>
+<link rel="stylesheet" href="C:\Users\WE\Documents\project1.html\css\registration.css">
+</head>
+<body>
+
+<h1>Restaurant Table Booking Form</h1>
+
+<form>
+
+   
+   <div>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"
+               pattern="[0-9]{10}"
+               placeholder="10-digit number">
+   
+    <br>
+    </div>
+
+   <div>
+        <legend>Reservation Details</legend>
+
+        <label for="guests">Guest Count:</label>
+        <input type="number" id="guests" name="guests"
+               min="1" max="20">
+        <br><br>
+
+        <label for="date">Booking Date:</label>
+        <input type="date" id="date" name="date"
+               min="2026-06-25">
+        <br><br>
+
+        <label for="time">Booking Time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <label for="occasion">Occasion:</label>
+        <select id="occasion" name="occasion">
+            <option value="">Select Occasion</option>
+            <option value="birthday">Birthday</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="family">Family Gathering</option>
+            <option value="business">Business Meeting</option>
+        </select>
+
+</div>
+    <br>
+<div>
+    
+        <legend>Preferences</legend>
+
+        <p>Seating Preference:</p>
+
+        <input type="radio" id="indoor" name="seating" value="Indoor">
+        <label for="indoor">Indoor</label>
+
+        <input type="radio" id="outdoor" name="seating" value="Outdoor">
+        <label for="outdoor">Outdoor</label>
+
+        <br><br>
+
+        <p>Add-ons:</p>
+
+        <input type="checkbox" id="cake" name="addons" value="Birthday Cake">
+        <label for="cake">Birthday Cake</label>
+
+        <input type="checkbox" id="decor" name="addons" value="Decoration">
+        <label for="decor">Decoration</label>
+
+        <br><br>
+
+        <label for="requests">Special Requests:</label>
+        <br>
+        <textarea id="requests" name="requests" rows="4"></textarea>
+
+        <br><br>
+
+        <label for="idproof">ID Proof Upload:</label>
+        <input type="file" id="idproof" name="idproof"
+               accept=".pdf,.jpg,.jpeg">
+  
+</div>
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
